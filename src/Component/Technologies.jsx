@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub, FaAngular,FaPhp, FaBootstrap } from "react-icons/fa"; 
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub, FaAngular,FaPhp, FaBootstrap, FaVuejs } from "react-icons/fa"; 
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants"; 
 
@@ -73,11 +73,11 @@ const Technologies = () => {
             <div className="text-white text-4xl">
               <FaReact />
             </div>
-            <p className="mt-4 text-white font-semibold">React</p>
+            <p className="mt-4 text-white font-semibold">React.js</p>
           </motion.div>
 
           {/* Node.js */}
-          <motion.div   variants={fadeIn("right", 0.4)}
+          {/* <motion.div   variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
@@ -86,7 +86,7 @@ const Technologies = () => {
               <FaNodeJs />
             </div>
             <p className="mt-4 text-white font-semibold">Node.js</p>
-          </motion.div>
+          </motion.div> */}
 
           {/* GitHub */}
           <motion.div  variants={fadeIn("right", 0.4)}
@@ -99,6 +99,7 @@ const Technologies = () => {
             </div>
             <p className="mt-4 text-white font-semibold">GitHub</p>
           </motion.div>
+
           <motion.div  variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView="show"
@@ -109,7 +110,8 @@ const Technologies = () => {
             </div>
             <p className="mt-4 text-white font-semibold">Angular</p>
           </motion.div>
-          <motion.div  variants={fadeIn("right", 0.4)}
+
+          {/* <motion.div  variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
@@ -118,6 +120,17 @@ const Technologies = () => {
               <FaPhp />
             </div>
             <p className="mt-4 text-white font-semibold">PHP</p>
+          </motion.div> */}
+
+          <motion.div  variants={fadeIn("right", 0.4)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+           className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col items-center justify-center">
+            <div className="text-white text-4xl">
+              <FaVuejs />
+            </div>
+            <p className="mt-4 text-white font-semibold">Vue.js</p>
           </motion.div>
         </div>
       </div>

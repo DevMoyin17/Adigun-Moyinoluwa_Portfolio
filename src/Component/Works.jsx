@@ -2,14 +2,14 @@ import React from 'react'
 
 const works = [
   {
-    title: 'E-commerce Website',
+    title: 'Mini E-commerce Website',
     description: 'A fully functional e-commerce platform with product listings, cart, and checkout.',
     imageUrl: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&auto=format&fit=crop&q=80',
     liveUrl: 'https://mini-ecommerce-eight-lyart.vercel.app/',
     repoUrl: 'https://github.com/yourusername/ecommerce',
   },
   {
-    title: 'Budget App',
+    title: 'Mini Budget App',
     description: 'The Budget App helps users manage their finances by tracking income and expenses.',
     imageUrl: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop&q=80',
     liveUrl: 'https://budget-app-theta-pink.vercel.app/',
@@ -23,7 +23,7 @@ const works = [
     repoUrl: 'https://github.com/yourusername/weather-app',
   },
   {
-    title: 'Hospital Management',
+    title: 'Healthcare Management System',
     description: 'A comprehensive hospital management system to handle patient records, appointments, billing, and staff schedules.',
     imageUrl: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&auto=format&fit=crop&q=80',
     liveUrl: 'https://hospital-management-omega-one.vercel.app/',

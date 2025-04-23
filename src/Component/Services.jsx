@@ -1,31 +1,31 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeIn } from "../variants"; 
+import { fadeIn } from "../variants";
 
 const services = [
   {
-    title: "Front-End Development",
+    title: "Responsive Web Design",
     description:
-      "Building responsive, visually appealing, and user-friendly interfaces using modern frameworks like React.",
-    icon: "🌐",
+      "Creating layouts that adapt seamlessly to different screen sizes and devices for an optimal user experience.",
+    icon: "📱",
   },
   {
-    title: "Back-End Development",
+    title: "Single Page Applications (SPA)",
     description:
-      "Creating robust server-side functionality and managing databases to ensure seamless performance.",
-    icon: "🛠️",
+      "Building fast and dynamic web applications using modern frameworks like React and Angular.",
+    icon: "⚡",
   },
   {
-    title: "API Development & Integration",
+    title: "UI/UX Implementation",
     description:
-      "Designing and integrating APIs to enable efficient communication between systems.",
-    icon: "🔗",
+      "Translating designs into clean, interactive user interfaces with attention to accessibility and usability.",
+    icon: "🎨",
   },
   {
-    title: "Full-Stack Solutions",
+    title: "Performance Optimization",
     description:
-      "Delivering end-to-end applications, from user interface to server logic, tailored to your needs.",
-    icon: "⚙️",
+      "Improving page load speed and front-end efficiency for better SEO and user retention.",
+    icon: "🚀",
   },
 ];
 
@@ -33,11 +33,15 @@ const Services = () => {
   return (
     <section className="bg-gray-900 py-16 text-white" id="services">
       <div className="container mx-auto px-4">
-        <motion.h2  variants={fadeIn("right", 0.4)}
+        <motion.h2
+          variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
-           className="text-3xl font-bold text-center text-white mb-8">My Services</motion.h2>
+          className="text-3xl font-bold text-center text-white mb-8"
+        >
+          My Frontend Services
+        </motion.h2>
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <motion.div

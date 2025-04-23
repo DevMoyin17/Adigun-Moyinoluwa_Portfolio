@@ -36,7 +36,7 @@ const Banners = ({ contactRef }) => {
             <span className="mr-3">I specialize in</span>
             <TypeAnimation
               sequence={[
-                "Full-Stack Development",
+                "Frontend Development",
                 2000,
                 "Creative Design",
                 2000,
@@ -57,7 +57,7 @@ const Banners = ({ contactRef }) => {
             viewport={{ once: false, amount: 0.7 }}
             className="mb-8 max-w-lg lg:mx-0 text-gray-300"
           >
-            Crafting innovative and efficient solutions as a full-stack developer. I'm here to help turn your ideas into powerful digital experiences.
+             Designing clean, responsive, and engaging user interfaces as a frontend developer. I turn ideas into seamless web experiences.
           </motion.p>
 
           <motion.div

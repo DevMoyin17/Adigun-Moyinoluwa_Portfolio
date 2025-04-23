@@ -4,9 +4,9 @@ import { fadeIn } from "../variants";
 import image from "../assets/image6.png"
 
 const About = () => {
-  const handleDownload = () =>{
+  const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/AdigunMoyinoluwaDeborahResume.pdf'; // This should be the path to your CV file in the public folder
+    link.href = '/AdigunMoyinoluwaDeborahResume.pdf';
     link.download = 'DevMoyin_Resume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -41,16 +41,10 @@ const About = () => {
         >
           <h2 className="text-3xl font-bold mb-4 text-center">About Me</h2>
           <p className="text-gray-300 mb-4">
-            Hi! I'm a passionate full-stack developer with experience building
-            responsive web applications and scalable back-end systems. I love
-            crafting elegant solutions to complex problems and continuously
-            learning new technologies.
+            Hi! I'm a frontend developer with a strong focus on building responsive, accessible, and user-friendly websites. I enjoy turning designs into clean, functional interfaces using modern web technologies.
           </p>
           <p className="text-gray-300 mb-4">
-            With expertise in front-end frameworks & libraries like React, Angular and robust
-            back-end tools like Node.js, MongoDB, MySQL, and PHP, I bring a holistic approach
-            to software development. My goal is to deliver clean, efficient, and
-            user-friendly applications tailored to client needs.
+            I work with tools and frameworks like React.js, Angular, Vue.js Bootstrap, to deliver seamless user experiences across different devices and browsers. My approach is rooted in attention to detail, performance optimization, and writing clean, maintainable code.
           </p>
           <button
             onClick={handleDownload}
