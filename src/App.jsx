@@ -1,6 +1,6 @@
 import './App.css'
 import React, { useRef } from "react";
-import Navbar from './Component/Navbar'
+// import Navbar from './Component/Navbar'
 import Header from './Component/Header';
 import About from './Component/About';
 import Services from './Component/Services';
@@ -18,7 +18,7 @@ function App() {
   return (
     <>
      <div className='overflow-hidden'>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Header/>
       <Banners  contactRef={contactRef} />
       <Technologies/>

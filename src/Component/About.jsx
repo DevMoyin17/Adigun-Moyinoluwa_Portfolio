@@ -1,20 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeIn } from "../variants"; 
-import image from "../assets/image6.png"
+import { fadeIn } from "../variants";
+import image from "../assets/image6.png";
 
 const About = () => {
   const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/AdigunMoyinoluwaDeborahResume.pdf';
-    link.download = 'DevMoyin_Resume.pdf';
+    const link = document.createElement("a");
+    link.href = "/AdigunMoyinoluwaDeborahResume.pdf";
+    link.download = "DevMoyin_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-  }
+  };
 
   return (
-    <section className="bg-gray-900 py-16 text-white" id="about">
+    <section className="bg-gray-950 py-16 text-white" id="about">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start">
         {/* Left Side: Image */}
         <motion.div
@@ -27,7 +27,7 @@ const About = () => {
           <img
             src={image}
             alt="About Me"
-            className="rounded-full w-[50%] lg:w-[60%] shadow-lg border-2 border-blue-500" 
+            className="rounded-full w-[50%] lg:w-[60%] shadow-lg border-2 border-blue-500"
           />
         </motion.div>
 
@@ -41,11 +41,26 @@ const About = () => {
         >
           <h2 className="text-3xl font-bold mb-4 text-center">About Me</h2>
           <p className="text-gray-300 mb-4">
-            Hi! I'm a frontend developer with a strong focus on building responsive, accessible, and user-friendly websites. I enjoy turning designs into clean, functional interfaces using modern web technologies.
+            Hi, I’m Moyinoluwa — a passionate frontend developer who turns
+            creative ideas into clean, responsive, and high-performing web
+            experiences. I specialize in building user interfaces that are not
+            only visually appealing but also accessible and optimized for
+            performance.
           </p>
           <p className="text-gray-300 mb-4">
-            I work with tools and frameworks like React.js, Angular, Vue.js Bootstrap, to deliver seamless user experiences across different devices and browsers. My approach is rooted in attention to detail, performance optimization, and writing clean, maintainable code.
+            I work with tools like <strong>React.js</strong>,{" "}
+            <strong>Vue.js</strong>, <strong>Angular</strong>,{" "}
+            <strong>Bootstrap</strong>, and modern JavaScript to craft websites
+            that function seamlessly across all devices. Whether I’m
+            collaborating on a team or working independently, I value writing
+            clean, maintainable code and delivering projects that meet
+            real-world needs.
           </p>
+          <p className="text-gray-300 mb-6">
+            I'm always learning and evolving with the web — committed to
+            building solutions that help businesses and users thrive online.
+          </p>
+
           <button
             onClick={handleDownload}
             className="inline-block bg-blue-600 text-white px-6 py-4 rounded-full shadow-md hover:bg-blue-700 transition duration-300"
