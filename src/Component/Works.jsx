@@ -8,20 +8,7 @@ const works = [
     liveUrl: 'https://mini-ecommerce-eight-lyart.vercel.app/',
     repoUrl: 'https://github.com/DevMoyin17/ecommerce',
   },
-  {
-    title: 'Mini Budget App',
-    description: 'A budget tracking application enabling users to manage income and expenses effectively. Built with JavaScript and Bootstrap.',
-    imageUrl: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop&q=80',
-    liveUrl: 'https://budget-app-theta-pink.vercel.app/',
-    repoUrl: 'https://github.com/DevMoyin17/budget-app',
-  },
-  {
-    title: 'Weather App',
-    description: 'A weather forecasting tool that retrieves real-time weather data based on user input. Developed with JavaScript, HTML, and CSS.',
-    imageUrl: 'https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&auto=format&fit=crop&q=80',
-    liveUrl: 'https://weather-app-one-rho-46.vercel.app/',
-    repoUrl: 'https://github.com/DevMoyin17/weather-app',
-  },
+ 
   {
     title: 'Healthcare Management System',
     description: 'A full-stack hospital management solution handling appointments, records, billing, and schedules. Built using React, Node.js, MongoDB.',
@@ -29,6 +16,16 @@ const works = [
     liveUrl: 'https://hospital-management-omega-one.vercel.app/',
     repoUrl: 'https://github.com/DevMoyin17/hospital-management-system',
   },
+
+ {
+  title: 'Cryptocurrency Price Tracker',
+  description: 'A responsive Vue 3 and Tailwind CSS app displaying real-time crypto prices with search, currency conversion, manual refresh, dark mode, and loading skeletons, powered by CoinGecko API.',
+imageUrl: 'https://images.unsplash.com/photo-1639754390580-2e7437267698?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y3J5cHRvY3VycmVuY3l8ZW58MHx8MHx8fDA%3D',
+  liveUrl: 'https://crypto-tracker-sigma-lyart.vercel.app/',
+  repoUrl: 'https://github.com/DevMoyin17/Crypto_tracker'
+}
+
+
 ];
 
 const Works = () => {
@@ -36,7 +33,7 @@ const Works = () => {
     <section className="py-16 bg-gray-950 text-white" id="work">
       <div className="container mx-auto text-center px-4">
         <h2 className="text-4xl font-bold mb-12">Projects</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {works.map((work, index) => (
             <div
               key={index}
