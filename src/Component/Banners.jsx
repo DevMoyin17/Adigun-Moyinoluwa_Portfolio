@@ -62,7 +62,7 @@ const Banners = ({ contactRef }) => {
             viewport={{ once: false, amount: 0.7 }}
             className="mb-6 max-w-xl  lg:mx-0 text-gray-300 text-sm sm:text-base"
           >
-            I craft fast, modern websites using the right tools for the job —
+            I craft fast, modern websites using the right tools for the job,
             from HTML, CSS, and JavaScript to powerful frameworks like React
             and beyond. Let’s collaborate to bring your ideas to life online.
           </motion.p>

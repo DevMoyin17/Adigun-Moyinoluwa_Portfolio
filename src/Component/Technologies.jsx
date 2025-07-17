@@ -14,6 +14,22 @@ import {
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
+const tailwindIcon = (
+  <img
+    src="https://www.svgrepo.com/show/374118/tailwind.svg"
+    alt="Tailwind CSS"
+    className="w-6 h-6"
+  />
+);
+
+const nextIcon=(
+  <img
+      src="https://cdn.simpleicons.org/nextdotjs/ffffff"
+    alt="Next.js"
+    className="w-6 h-6"
+  />
+)
+
 const techStack = [
   { icon: <FaHtml5 />, label: "HTML" },
   { icon: <FaCss3Alt />, label: "CSS" },
@@ -21,9 +37,10 @@ const techStack = [
   { icon: <FaJs />, label: "JavaScript" },
   { icon: <FaReact />, label: "React.js" },
   { icon: <FaGithub />, label: "GitHub" },
-  { icon: <FaAngular />, label: "Angular" },
+  // { icon: <FaAngular />, label: "Angular" },
   { icon: <FaVuejs />, label: "Vue.js" },
-  // Uncomment if using:
+  { icon: tailwindIcon, label: "Tailwind CSS" },
+  { icon: nextIcon, label: "Next.js" },
   // { icon: <FaNodeJs />, label: "Node.js" },
   // { icon: <FaPhp />, label: "PHP" },
 ];

@@ -41,7 +41,7 @@ const About = () => {
         >
           <h2 className="text-3xl font-bold mb-4 text-center">About Me</h2>
           <p className="text-gray-300 mb-4">
-            Hi, I’m Moyinoluwa a passionate frontend developer who turns
+            Hi, I’m Moyinoluwa, A passionate frontend developer who turns
             creative ideas into clean, responsive, and high-performing web
             experiences. I specialize in building user interfaces that are not
             only visually appealing but also accessible and optimized for
@@ -49,7 +49,7 @@ const About = () => {
           </p>
           <p className="text-gray-300 mb-4">
             I work with tools like <strong>React.js</strong>,{" "}
-            <strong>Vue.js</strong>, <strong>Angular</strong>,{" "}
+            <strong>Vue.js</strong>,
             <strong>Bootstrap</strong>, <strong>Tailwind Css</strong> and modern JavaScript to craft websites
             that function seamlessly across all devices. Whether I’m
             collaborating on a team or working independently, I value writing

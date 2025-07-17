@@ -61,7 +61,7 @@ const Contact = React.forwardRef((props, ref) => {
 
           {/* Name */}
           <div className="mb-5 text-left">
-            <label htmlFor="name" className="block mb-1 font-medium text-gray-700">
+            <label htmlFor="name" className="block mb-1 font-medium ">
               Name<span className="text-red-500">*</span>
             </label>
             <input
@@ -82,7 +82,7 @@ const Contact = React.forwardRef((props, ref) => {
 
           {/* Email */}
           <div className="mb-5 text-left">
-            <label htmlFor="email" className="block mb-1 font-medium text-gray-700">
+            <label htmlFor="email" className="block mb-1 font-medium ">
               Email<span className="text-red-500">*</span>
             </label>
             <input
@@ -109,7 +109,7 @@ const Contact = React.forwardRef((props, ref) => {
 
           {/* Message */}
           <div className="mb-5 text-left">
-            <label htmlFor="message" className="block mb-1 font-medium text-gray-700">
+            <label htmlFor="message" className="block mb-1 font-medium">
               Message<span className="text-red-500">*</span>
             </label>
             <textarea
