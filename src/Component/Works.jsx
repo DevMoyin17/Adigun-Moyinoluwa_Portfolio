@@ -6,7 +6,7 @@ const works = [
     description: 'A fully functional e-commerce platform featuring product listings, cart functionality, and a seamless checkout experience, built using React and Node.js.',
     imageUrl: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&auto=format&fit=crop&q=80',
     liveUrl: 'https://mini-ecommerce-eight-lyart.vercel.app/',
-    repoUrl: 'https://github.com/DevMoyin17/ecommerce',
+    repoUrl: 'https://github.com/DevMoyin17/Mini-Ecommerce',
   },
  
   {
@@ -14,7 +14,7 @@ const works = [
     description: 'A full-stack hospital management solution handling appointments, records, billing, and schedules. Built using React, Node.js, MongoDB.',
     imageUrl: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&auto=format&fit=crop&q=80',
     liveUrl: 'https://hospital-management-omega-one.vercel.app/',
-    repoUrl: 'https://github.com/DevMoyin17/hospital-management-system',
+    repoUrl: 'https://github.com/DevMoyin17/Hospital_management',
   },
 
  {
