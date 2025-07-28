@@ -16,7 +16,6 @@ const About = () => {
   return (
     <section className="bg-gray-950 py-16 text-white" id="about">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start">
-        {/* Left Side: Image */}
         <motion.div
           variants={fadeIn("left", 0.3)}
           initial="hidden"
@@ -31,7 +30,6 @@ const About = () => {
           />
         </motion.div>
 
-        {/* Right Side: Content */}
         <motion.div
           variants={fadeIn("right", 0.4)}
           initial="hidden"

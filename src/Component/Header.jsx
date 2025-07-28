@@ -20,7 +20,6 @@ const Header = () => {
   return (
     <header className="bg-gray-900 shadow-lg sticky top-0 z-50 py-4">
       <div className="container mx-auto px-6 flex justify-between items-center">
-        {/* Logo */}
         <ScrollLink to="home" smooth={true} duration={500} className="cursor-pointer">
           <img
             src={logo}
@@ -29,7 +28,6 @@ const Header = () => {
           />
         </ScrollLink>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
             <ScrollLink
@@ -56,7 +54,6 @@ const Header = () => {
           </ScrollLink>
         </nav>
 
-        {/* Mobile Hamburger Icon */}
         <div className="md:hidden">
           <button onClick={toggleMenu} aria-label="Toggle menu" className="text-white text-2xl">
             {menuOpen ? <FiX /> : <FiMenu />}
@@ -64,7 +61,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-gray-800 px-6 pb-6 pt-4">
           <nav className="flex flex-col gap-4">

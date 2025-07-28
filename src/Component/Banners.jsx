@@ -16,7 +16,6 @@ const Banners = ({ contactRef }) => {
       id="home"
     >
       <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
-        {/* Left Side */}
         <div className="text-center lg:text-left lg:w-1/2">
           <motion.h1
             variants={fadeIn("up", 0.3)}
@@ -67,14 +66,12 @@ const Banners = ({ contactRef }) => {
             and beyond. Let’s collaborate to bring your ideas to life online.
           </motion.p>
 
-          {/* Button */}
 <motion.div
   variants={fadeIn("up", 0.6)}
   initial="hidden"
   whileInView="show"
   className="flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-start gap-6 mb-10"
 >
-  {/* Contact Button */}
   <button
     onClick={scrollToContact}
     className="bg-blue-600 text-white px-6 py-3 rounded-full shadow-md hover:bg-blue-700 transition text-sm sm:text-base"
@@ -82,7 +79,6 @@ const Banners = ({ contactRef }) => {
     Contact Me
   </button>
 
-  {/* Social Icons */}
   <div className="flex gap-x-6 text-[20px] sm:text-[24px] text-gray-300">
     <a
       href="http://linkedin.com/in/adigun-moyinoluwa-4236872a2"
@@ -112,7 +108,6 @@ const Banners = ({ contactRef }) => {
 
         </div>
 
-        {/* Right Side Image */}
         <motion.div
           variants={fadeIn("down", 0.5)}
           initial="hidden"

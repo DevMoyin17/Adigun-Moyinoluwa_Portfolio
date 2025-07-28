@@ -59,7 +59,6 @@ const Contact = React.forwardRef((props, ref) => {
 
         <form onSubmit={handleSubmit(onSubmit)} className="p-8 rounded-lg shadow-lg bg-gray-800 text-white" noValidate>
 
-          {/* Name */}
           <div className="mb-5 text-left">
             <label htmlFor="name" className="block mb-1 font-medium ">
               Name<span className="text-red-500">*</span>
@@ -80,7 +79,6 @@ const Contact = React.forwardRef((props, ref) => {
             )}
           </div>
 
-          {/* Email */}
           <div className="mb-5 text-left">
             <label htmlFor="email" className="block mb-1 font-medium ">
               Email<span className="text-red-500">*</span>
@@ -107,7 +105,6 @@ const Contact = React.forwardRef((props, ref) => {
             )}
           </div>
 
-          {/* Message */}
           <div className="mb-5 text-left">
             <label htmlFor="message" className="block mb-1 font-medium">
               Message<span className="text-red-500">*</span>
@@ -142,7 +139,6 @@ const Contact = React.forwardRef((props, ref) => {
         </form>
       </div>
 
-      {/* Success Modal */}
       {showModal && (
         <div
           className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
