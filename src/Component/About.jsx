@@ -6,7 +6,7 @@ import image from "../assets/image6.png";
 const About = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/AdigunMoyinoluwaResume.pdf";
+    link.href = "/AdigunMoyinoluwaDeborahCV.pdf";
     link.download = "DevMoyin_Resume.pdf";
     document.body.appendChild(link);
     link.click();
