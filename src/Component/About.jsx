@@ -7,7 +7,7 @@ const About = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/AdigunMoyinoluwaDeborahCV.pdf";
-    link.download = "DevMoyin_Resume.pdf";
+    link.download = "AdigunMoyinoluwaDeborahCV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
