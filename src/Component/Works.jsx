@@ -2,10 +2,10 @@ import React from 'react';
 
 const works = [
   {
-    title: 'Mini E-commerce Website',
+    title: 'Online Marketplace Demo',
     description: 'A fully functional e-commerce platform featuring product listings, cart functionality, and a seamless checkout experience, built using React and Node.js.',
     imageUrl: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&auto=format&fit=crop&q=80',
-    liveUrl: 'https://mini-ecommerce-eight-lyart.vercel.app/',
+    liveUrl: 'https://buyly.vercel.app/',
     repoUrl: 'https://github.com/DevMoyin17/Mini-Ecommerce',
   },
  
@@ -13,7 +13,7 @@ const works = [
     title: 'Healthcare Management System',
     description: 'A full-stack hospital management solution handling appointments, records, billing, and schedules. Built using React, Node.js, MongoDB.',
     imageUrl: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&auto=format&fit=crop&q=80',
-    liveUrl: 'https://hospital-management-omega-one.vercel.app/',
+    liveUrl: 'https://winfield-hospital.vercel.app/',
     repoUrl: 'https://github.com/DevMoyin17/Hospital_management',
   },
 
@@ -21,7 +21,7 @@ const works = [
   title: 'Cryptocurrency Price Tracker',
   description: 'A responsive Vue 3 and Tailwind CSS app displaying real-time crypto prices with search, currency conversion, manual refresh, dark mode, and loading skeletons, powered by CoinGecko API.',
 imageUrl: 'https://images.unsplash.com/photo-1639754390580-2e7437267698?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y3J5cHRvY3VycmVuY3l8ZW58MHx8MHx8fDA%3D',
-  liveUrl: 'https://crypto-tracker-sigma-lyart.vercel.app/',
+  liveUrl: 'https://chainstats.vercel.app/',
   repoUrl: 'https://github.com/DevMoyin17/Crypto_tracker'
 }
 
