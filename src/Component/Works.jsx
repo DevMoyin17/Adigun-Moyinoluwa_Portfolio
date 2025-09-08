@@ -6,7 +6,7 @@ const works = [
     description: 'A fully functional e-commerce platform featuring product listings, cart functionality, and a seamless checkout experience, built using React and Node.js.',
     imageUrl: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&auto=format&fit=crop&q=80',
     liveUrl: 'https://buyly.vercel.app/',
-    repoUrl: 'https://github.com/DevMoyin17/Mini-Ecommerce',
+    repoUrl: 'https://github.com/DevMoyin17/Buyly',
   },
  
   {
