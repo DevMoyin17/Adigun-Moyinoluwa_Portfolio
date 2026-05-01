@@ -8,6 +8,7 @@ import Works from './Component/Works';
 import Banners from './Component/Banners';
 import Contact from './Component/Contact';
 import Technologies from './Component/Technologies';
+import Experience from './Component/Experience';
 
 
 
@@ -25,6 +26,7 @@ function App() {
       <About/>
       <Services/>
       <Works/>
+      <Experience/>
       <Contact ref={contactRef}  />
 
       
