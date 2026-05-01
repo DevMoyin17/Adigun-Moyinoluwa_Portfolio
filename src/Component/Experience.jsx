@@ -52,16 +52,16 @@ const Experience = () => {
           Experience
         </motion.p>
 
-        <motion.h2
-          variants={fadeIn("up", 0.2)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="text-3xl sm:text-4xl font-bold text-gray-100 mb-12"
-          style={{ fontFamily: "'DM Serif Display', serif", letterSpacing: "-0.03em" }}
-        >
-          Where I've built things.
-        </motion.h2>
+       <motion.h2
+  variants={fadeIn("up", 0.2)}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true }}
+  className="text-3xl sm:text-4xl font-medium text-gray-100 mb-12" // Fixed 'font-mediums' typo here too
+  style={{ fontFamily: "'DM Serif Display', serif", letterSpacing: "-0.03em" }}
+>
+  The Journey So Far.
+</motion.h2>
 
         <div className="flex flex-col divide-y divide-gray-800">
           {experiences.map((exp, index) => (

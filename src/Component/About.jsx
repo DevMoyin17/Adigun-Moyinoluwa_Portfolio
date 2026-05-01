@@ -64,7 +64,7 @@ const About = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="text-3xl sm:text-4xl font-bold text-gray-100 mb-5"
+          className="text-3xl sm:text-4xl font-medium text-gray-100 mb-5"
           style={{ fontFamily: "'DM Serif Display', serif", letterSpacing: "-0.03em" }}
         >
           A developer who thinks about

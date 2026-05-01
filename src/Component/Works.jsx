@@ -59,7 +59,7 @@ const Works = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="text-3xl sm:text-4xl font-bold text-gray-100 mb-12"
+          className="text-3xl sm:text-4xl font-medium text-gray-100 mb-12"
           style={{ fontFamily: "'DM Serif Display', serif", letterSpacing: "-0.03em" }}
         >
           Things I've built and shipped.
