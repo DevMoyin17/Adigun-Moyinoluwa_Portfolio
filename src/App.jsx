@@ -59,10 +59,10 @@ const projects = [
   },
   {
     id: "03",
-    name: "Buyly",
+    name: "Glowora",
     screenshot: { light: "/images/buyly.jpg", dark: "/images/buyly.jpg" },
     screenshotAlt:
-      "Buyly storefront with Glowora skincare branding, a pink collection banner, and product photography",
+      "Glowora skincare storefront, a pink collection banner, and product photography",
     color: "berry",
     category: "E-COMMERCE / REACT",
     title: "An online marketplace built with React.",
@@ -450,7 +450,7 @@ function App() {
                             "ChainStats cryptocurrency market dashboard showing Bitcoin, Ethereum and BNB prices and seven-day charts"
                           }
                           width="1800"
-                          height={project.name === "Buyly" ? 975 : 903}
+                          height={project.name === "Glowora" ? 975 : 903}
                           loading="lazy"
                           decoding="async"
                         />
@@ -464,8 +464,8 @@ function App() {
                       aria-label={`Explore ${project.name}`}
                     >
                       {project.caption ||
-                        (project.name === "Buyly"
-                          ? "View Buyly"
+                        (project.name === "Glowora"
+                          ? "View Glowora"
                           : "View ChainStats")}
                       <FiArrowUpRight />
                     </a>

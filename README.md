@@ -24,7 +24,7 @@ npm run build
 - Résumé: `public/Adigun-Moyinoluwa-CV.pdf`
 - Portrait: `public/images/moyinoluwa.jpg`
 
-Virtuo for Schools and Virtuo Facility use public product dashboard images from De-Virtuosphere, with light and dark variants. ChainStats uses the supplied light and dark website screenshots, matched to the portfolio theme. Buyly uses the supplied storefront screenshot. The live website and source links lead to the actual projects. Contact delivery uses the existing EmailJS service; its templates and allowed origins must remain configured in EmailJS. No database or backend credentials are needed by this website.
+Virtuo for Schools and Virtuo Facility use public product dashboard images from De-Virtuosphere, with light and dark variants. ChainStats uses the supplied light and dark website screenshots, matched to the portfolio theme. Glowora uses the supplied storefront screenshot. The live website and source links lead to the actual projects. Contact delivery uses the existing EmailJS service; its templates and allowed origins must remain configured in EmailJS. No database or backend credentials are needed by this website.
 
 ## Product image sources
 
