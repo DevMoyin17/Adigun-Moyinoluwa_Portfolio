@@ -2,10 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/AM.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-    <title>AdigunMoyinoluwa Portfolio</title>
+    <meta name="theme-color" content="#fcfbf8" />
+    <meta
+      name="description"
+      content="Moyinoluwa Adigun is a frontend developer in Lagos building thoughtful, responsive web applications with React, Vue, and Next.js. Explore selected work and get in touch."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Moyinoluwa Adigun — Frontend Developer</title>
+    <script>
+      try {
+        const t = localStorage.getItem("moyin-theme");
+        document.documentElement.dataset.theme =
+          t === "dark" || t === "light"
+            ? t
+            : matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light";
+      } catch {
+        document.documentElement.dataset.theme = matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches
+          ? "dark"
+          : "light";
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
