@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   FiArrowUpRight,
   FiArrowDown,
@@ -9,6 +9,8 @@ import {
   FiArrowRight,
   FiPlus,
   FiMinus,
+  FiMenu,
+  FiX,
 } from "react-icons/fi";
 import Contact from "./Component/Contact";
 import DashboardPreview from "./Component/DashboardPreview";
@@ -116,6 +118,10 @@ function App() {
       ? "dark"
       : "light";
   });
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuButtonRef = useRef(null);
+  const headerRef = useRef(null);
+  const navRef = useRef(null);
   const [activeSection, setActiveSection] = useState("home");
   const [flipped, setFlipped] = useState(false);
   const [openExperience, setOpenExperience] = useState(0);
@@ -127,6 +133,31 @@ function App() {
       /* Theme still works without storage. */
     }
   }, [theme]);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    navRef.current?.querySelector("a")?.focus();
+    const onKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setMenuOpen(false);
+        menuButtonRef.current?.focus();
+      }
+    };
+    const onPointerDown = (event) => {
+      if (!headerRef.current?.contains(event.target)) setMenuOpen(false);
+    };
+    const onResize = () => {
+      if (window.innerWidth > 700) setMenuOpen(false);
+    };
+    document.addEventListener("keydown", onKeyDown);
+    document.addEventListener("pointerdown", onPointerDown);
+    window.addEventListener("resize", onResize);
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.removeEventListener("pointerdown", onPointerDown);
+      window.removeEventListener("resize", onResize);
+    };
+  }, [menuOpen]);
 
   useEffect(() => {
     const elements = document.querySelectorAll(
@@ -169,14 +200,22 @@ function App() {
       <a href="#main" className="skip-link">
         Skip to content
       </a>
-      <header className="site-header">
+      <header className="site-header" ref={headerRef}>
         <div className="scroll-progress" aria-hidden="true" />
         <div className="shell header-inner">
           <a className="wordmark" href="#home">
             <span className="brand-dot" />
             Moyinoluwa<span className="wordmark-last"> Adigun</span>
           </a>
-          <nav aria-label="Main navigation">
+          <nav
+            id="main-navigation"
+            ref={navRef}
+            className={menuOpen ? "main-navigation is-open" : "main-navigation"}
+            aria-label="Main navigation"
+            onClick={(event) => {
+              if (event.target.closest("a")) setMenuOpen(false);
+            }}
+          >
             <a
               href="#work"
               aria-current={activeSection === "work" ? "location" : undefined}
@@ -197,6 +236,14 @@ function App() {
             >
               Contact
             </a>
+            <a
+              className="mobile-resume-link"
+              href={resume}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Résumé <FiArrowUpRight />
+            </a>
           </nav>
           <div className="header-actions">
             <button
@@ -214,6 +261,19 @@ function App() {
             >
               Résumé <FiArrowUpRight />
             </a>
+            <button
+              className="mobile-menu-toggle"
+              ref={menuButtonRef}
+              type="button"
+              aria-controls="main-navigation"
+              aria-expanded={menuOpen}
+              aria-label={
+                menuOpen ? "Close navigation menu" : "Open navigation menu"
+              }
+              onClick={() => setMenuOpen((open) => !open)}
+            >
+              {menuOpen ? <FiX /> : <FiMenu />}
+            </button>
           </div>
         </div>
       </header>
@@ -229,9 +289,9 @@ function App() {
           </div>
           <div className="hero-heading">
             <h1>
-              I build web applications.
+              I turn ideas into
               <br />
-              <span>React. Vue. Next.js.</span>
+              <span>web experiences.</span>
             </h1>
             <div className="round-stamp" aria-hidden="true">
               <span>BUILT WITH CARE</span>
@@ -240,9 +300,9 @@ function App() {
             </div>
           </div>
           <p className="hero-description">
-            Hi, I’m Moyinoluwa. I build responsive web applications with{" "}
-            <strong>React and Vue</strong>. I work on dashboards, school
-            management systems, and e-commerce websites.
+            I’m Moyinoluwa, a frontend developer based in Lagos. I bring designs
+            to life with responsive layouts, smooth interactions, and code
+            that’s easy to build on.
           </p>
           <div className="hero-actions">
             <a className="pill" href="#work">
