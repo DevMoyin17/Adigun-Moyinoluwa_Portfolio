@@ -71,7 +71,7 @@ const projects = [
     description:
       "An online marketplace I built from the ground up. A responsive storefront, a cart that updates instantly, and an admin dashboard to keep the catalogue in order.",
     stack: ["React.js", "Context API", "Tailwind CSS", "JSON Server"],
-    live: "https://buyly.vercel.app/",
+    live: "https://gloworaa.vercel.app/",
     repo: "https://github.com/DevMoyin17/Buyly",
   },
   {
