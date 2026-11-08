@@ -13,6 +13,7 @@ import {
   FiX,
 } from "react-icons/fi";
 import Contact from "./Component/Contact";
+import BottomBlur from "./Component/BottomBlur";
 import DashboardPreview from "./Component/DashboardPreview";
 
 const resume = "/Adigun-Moyinoluwa-CV.pdf";
@@ -645,6 +646,7 @@ function App() {
           </a>
         </div>
       </footer>
+      <BottomBlur />
     </>
   );
 }
