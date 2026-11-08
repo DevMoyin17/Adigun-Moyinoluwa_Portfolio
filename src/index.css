@@ -2213,3 +2213,11 @@ nav .mobile-resume-link {
     color-mix(in srgb, var(--bg) 55%, transparent)
   );
 }
+
+.bottom-blur {
+  opacity: 1;
+  transition: opacity 250ms ease;
+}
+.bottom-blur.is-at-bottom {
+  opacity: 0;
+}
